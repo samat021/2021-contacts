@@ -136,14 +136,6 @@ int main(int argc, char **argv) {
             printf("Error: No active contacts log name available\n");
         }
 
-            //     const char *log_name = get_contacts_log_name(log);
-            //     if (log_name != NULL){
-            //         printf("%s\n", log->log_name);
-            //     }
-            //     else {
-            //         printf("Error: You must create or load a contacts log first\n");
-            //     }
-            // }     
         
         }
         }
@@ -205,15 +197,6 @@ int main(int argc, char **argv) {
         }
 
 
-
-                // char log = get_contacts_log_name(log);
-                // if (log != NULL){
-                //     printf("%s", name);
-                // }
-                // else {
-                //     printf("Error: You must create or load a contacts log first\n");
-                // }
-
         else if (strcmp("clear", cmd) == 0) {
             //clears using free
 
@@ -266,16 +249,6 @@ int main(int argc, char **argv) {
                     printf("Failed to read contacts log from text file\n");
                 }
 
-                //og before improvement! pretty sure it works
-                // contacts_log_t *new_log = read_contacts_log_from_text(file_name);
-                // if(new_log != NULL){
-                //     printf("Contacts log loaded from text file\n");
-                //     //free_contacts_log(new_log);
-                //     log = new_log;
-                // }
-                // else {
-                //     printf("Failed to read contacts log from text file\n");
-                // }
             }
         
         }
@@ -311,7 +284,7 @@ int main(int argc, char **argv) {
                 //contacts_log_t *newlog = read_contacts_log_from_binary(file_name);
                 if(log != NULL){
                     printf("Contacts log loaded from binary file\n");
-                    //free_contacts_log(log); //free is uneeded
+                    //free_contacts_log(log); //free is unneeded
                     
                 }
                 else {
@@ -320,11 +293,6 @@ int main(int argc, char **argv) {
             }
         
         }
-
-
-        // TODO Add cases for other commands
-        // Read in the command and (possibly) additional arguments with scanf()
-        
 
 
 
